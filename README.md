@@ -8,8 +8,8 @@
   <h2>Tabela</h2>
   <p>Cada pasta corresponde a um site.</p>
   
-  Nome da pasta (site) | Link para o site | Link para o local de onde foi tirada a idéia | Descrição geral
-  --- | --- |  --- |---
+  Nome da pasta (site) | Link para o site | Descrição geral
+  --- | --- |  ---
   tabela-precos |
   
 </div>
