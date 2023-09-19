@@ -1,6 +1,11 @@
 <div align="center">
   <h1>Repositório e reconhecimento de criadores:</h1>
+  <p>Aqui constam as informações sobre tecnologias, linguagens e ferramentas usadas para criar o software; além de informações sobre o repositório e o local de onde foram tiradas as idéias para criar o software.</p>
   <hr>
+  <h2>Sobre o repositório:</h2>
+  
+  <hr>
+  
   <h2>Reconhecimento aos criadores:</h2>
   
   Nome e caminho para a imagem | Autor(es)
