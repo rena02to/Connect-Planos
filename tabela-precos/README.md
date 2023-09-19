@@ -4,6 +4,8 @@
   <hr>
 
   <h2>Sobre o repositório:</h2>
+
+  <hr>
   
   <h2>Reconhecimento aos criadores:</h2>
   
