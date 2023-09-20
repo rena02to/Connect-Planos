@@ -6,7 +6,7 @@ function Navbar(){
         <div className={style.navbar}>
             <ul className={style.ulnavbar}>
                 <li><Link to="/"><p>Home</p></Link></li>
-                <li><Link to="/contato"><p>Contate-nos</p></Link></li>
+                <li><Link to="/contato"><p>Contate-me</p></Link></li>
                 <li><Link to="/sobre"><p>Sobre</p></Link></li>
             </ul>
         </div>
