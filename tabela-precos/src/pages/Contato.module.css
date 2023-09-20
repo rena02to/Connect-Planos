@@ -1,0 +1,34 @@
+.contato{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(158, 183, 229);
+    margin: 7% auto;
+    width: 60%;
+    max-width: 40em;
+    border-radius: 30px 5px;
+    text-align: center;
+}
+.contato a{
+    text-decoration: none;
+    color: black;
+}
+
+.links svg{
+    width: 3em;
+    height: 3em;
+}
+
+.linkedin{
+    margin-left: 1em;
+}
+
+.contato h1{
+    font-size: 1.5em;
+    margin-top: 2em;
+}
+
+.contato img{
+    width: 12.5em;
+    height: 12.5em;
+}

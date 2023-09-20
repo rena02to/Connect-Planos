@@ -1,0 +1,27 @@
+.navbar{
+    display: flex;
+    background-color: rgb(51, 51, 255);
+    width: 100%;
+    flex-direction: row;
+    justify-content: right;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.navbar p{
+    color: white;
+    font-size: 1.4em;
+}
+
+.ulnavbar{
+    list-style: none;
+    display: flex;
+    margin: 0px 5% 0px 5%;
+}
+
+.ulnavbar li{
+    padding-left: 70px;
+}
