@@ -1,6 +1,6 @@
 .navbar{
     display: flex;
-    background-color: rgb(51, 51, 255);
+    background: linear-gradient(to right, rgb(135, 206, 235), rgb(51, 51, 255));;
     width: 100%;
     flex-direction: row;
     justify-content: right;
