@@ -15,6 +15,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin-bottom: 3em;
 }
 
 .titulo h1{
@@ -27,7 +28,7 @@
     flex-direction: row;
     width: 80%;
     justify-content: space-between;
-    margin-top: 5em;
+    margin-top: 2em;
 }
 
 .legenda{
@@ -35,6 +36,88 @@
     font-size: x-large;
     color: rgb(51, 51, 255);
     font-weight: bold;
+}
+
+.switch{
+    position: relative;
+    display: inline-block;
+    width: 16em;
+    height: 3em;
+}
+  
+.slider{
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    border-radius: 34px;
+    text-align: center;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 2.5em;
+    width: 6em;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.liga_desliga{
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider_mens, .slider_mens_before{
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.slider_mens{
+    color: blue;
+}
+
+.slider_mens_before{
+    color: gray;
+}
+
+.slider_anual, .slider_anual_before{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-10%, -50%);
+    cursor: pointer;
+    font-weight: bold;
+    color: gray;
+}
+
+.slider_anual{
+    color: gray;
+}
+
+.slider_anual_before{
+    color: blue;
+}
+
+.liga_desliga:checked + .slider:before{
+    -webkit-transform: translateX(5.5em);
+    -ms-transform: translateX(5.5em);
+    transform: translateX(5.5em);
+    width: 10em;
 }
 
 @media (max-width: 1600px) {

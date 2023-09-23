@@ -41,8 +41,14 @@ function InfoPreco({infos}){
     }, [plano]);
 
     if(infos[0] === false){
-        valor = valor *10;
+        valor = (valor * 12) * 0.8; //20% de desconto
+        valor = Math.ceil(valor);//arredonda para o meior inteiro
         validade = "/ Por ano";
+    }
+
+
+    function contratando(){
+        
     }
 
     return(
