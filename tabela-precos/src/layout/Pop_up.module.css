@@ -1,0 +1,161 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.telinha{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 20%;
+    left: 30%;
+    width: 40%;
+    height: auto;
+    background-color: white;
+    z-index: 999999;
+    border-radius: 4%;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1em;
+    width: 90%;
+    margin-bottom: 0em;
+    border-width: 0px;
+}
+
+.main legend{
+    text-align: center;
+}
+
+.main h1{
+    font-size: xx-large;
+    color: blue;
+}
+
+.main h2{
+    font-size: x-large;
+}
+
+.main p{
+    font-size: large;
+}
+
+.legenda_main{
+    margin-bottom: -2em;
+}
+
+.legenda_dados_compra{
+    margin-bottom: -1em;
+}
+
+.dados_compra, .dados_cartao{
+    width: 100%;
+    border-radius: 1em;
+    display: flex;
+}
+
+.dados_compra{
+    flex-direction: column;
+    align-items: center;
+}
+
+.compra_intern{
+    margin-top: 0em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 0em;
+}
+
+.menos, .mais{
+    width: 2.5em;
+    height: 2.5em;
+}
+
+.quantidade{
+    width: 3.5em;
+    height: 2.5em;
+    text-align: center;
+}
+
+.quantidade::-webkit-inner-spin-button,
+.quantidade::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.compra_intern p{
+    margin-left: 1em;
+}
+
+.dados_compra h1{
+    margin-top: 0em;
+    margin-bottom: 0em;
+    font-size: xx-large;
+    color: green;
+}
+
+.dados_cartao{
+    flex-direction: column;
+    align-items: center;
+}
+
+.nome_numero, .codigo_validade{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+
+.dados_cartao input{
+    width: 100%;
+}
+
+.dados_cartao fieldset{
+    width: 50%;
+    border-radius: 1em;
+    border-width: 0px;
+}
+
+.dados_cartao input{
+    text-align: center;
+    height: 3em;
+    border-radius: 1em;
+    border: 1px solid gray;
+}
+
+.botoes{
+    display: flex;
+    flex-direction: row;
+    margin-top: 1em;
+    margin-bottom: 2em;
+    width: 50%;
+    justify-content: space-between;
+}
+
+.cancelar, .confirmar{
+    height: 3.5em;
+    width: 8em;
+    border-radius: 1em;
+    border-width: 0em;
+    cursor: pointer;
+}
+
+.cancelar{
+    background-color: red;
+    color: white;
+}
+
+.confirmar{
+    background-color: green;
+    color: white;
+}
+
+.error{
+    color: red;
+    margin-top: 0em;
+    margin-bottom: 0em;
+}

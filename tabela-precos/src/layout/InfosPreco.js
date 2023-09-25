@@ -4,7 +4,7 @@ import { FaCrown, FaCogs } from "react-icons/fa";
 import { BsFillShieldFill } from "react-icons/bs";
 import style from "./InfosPreco.module.css";
 
-function InfoPreco({infos}){
+function InfoPreco({ scroll, infos }){
     var valor = infos[3];
     const plano = infos[1];
     const [tipo, setTipo] = useState('');
@@ -47,8 +47,8 @@ function InfoPreco({infos}){
     }
 
 
-    function contratando(){
-        
+    const Contratando = () => {
+        scroll(true, valor, plano);
     }
 
     return(
@@ -85,7 +85,7 @@ function InfoPreco({infos}){
                     </div>
                 </div>
             </div>
-            <button><h2 className={style.botao}>Contratar</h2></button>
+            <button onClick={Contratando}><h2 className={style.botao}>Contratar</h2></button>
         </div>
     );
 }
