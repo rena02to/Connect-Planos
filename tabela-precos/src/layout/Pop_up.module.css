@@ -26,11 +26,15 @@
     border-width: 0px;
 }
 
+.main input{
+    outline: none;
+}
+
 .main legend{
     text-align: center;
 }
 
-.main h1{
+.titulo{
     font-size: xx-large;
     color: blue;
 }
@@ -75,14 +79,35 @@
     height: 2.5em;
 }
 
-.quantidade{
+.menos{
+    margin-right: 0.1em;
+}
+
+.mais{
+    margin-left: 0.1em;
+}
+
+.quantidade, .eQuantidade{
     width: 3.5em;
     height: 2.5em;
     text-align: center;
+    outline: none;
 }
 
-.quantidade::-webkit-inner-spin-button,
-.quantidade::-webkit-outer-spin-button {
+.eQuantidade{
+    border: 2px solid red;
+    border-radius: 3px;
+    animation: piscar 1s infinite;
+}
+
+.error_quantidade{
+    color: red;
+    margin-top: 0em;
+    margin-bottom: 1.5em;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
     -webkit-appearance: none;
     appearance: none;
 }
@@ -91,11 +116,18 @@
     margin-left: 1em;
 }
 
-.dados_compra h1{
+.total, .eTotal{
     margin-top: 0em;
     margin-bottom: 0em;
     font-size: xx-large;
+}
+
+.total{
     color: green;
+}
+
+.eTotal{
+    color: red;
 }
 
 .dados_cartao{
@@ -125,6 +157,7 @@
     height: 3em;
     border-radius: 1em;
     border: 1px solid gray;
+    font-size: medium;
 }
 
 .botoes{
@@ -154,8 +187,70 @@
     color: white;
 }
 
-.error{
+.data, .eData{
+    padding-right: 20px;
+    outline: none;
+    cursor: pointer;
+}
+
+.eData, .eCartao{
+    border: 2px solid red !important;
+    animation: piscar 1s infinite;
+}
+
+@keyframes piscar {
+    0%{
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.dataErrada, .cartaoErrado, .camposErrados{
     color: red;
-    margin-top: 0em;
-    margin-bottom: 0em;
+}
+
+.camposErrados{
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+}
+
+@media (max-width: 1600px) {
+    .telinha{
+        width: 50%;
+        left: 25%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .telinha{
+        width: 60%;
+        left: 20%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .telinha{
+        width: 70%;
+        left: 15%;
+    }
+}
+
+@media (max-width: 800px) {
+    .telinha{
+        width: 80%;
+        left: 10%;
+    }
+}
+
+@media (max-width: 600px) {
+    .telinha{
+        width: 90%;
+        left: 5%;
+    }
 }

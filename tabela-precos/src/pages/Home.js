@@ -3,6 +3,7 @@ import { useState } from "react";
 import style from "./Home.module.css";
 import InfoPreco from "../layout/InfosPreco";
 import Pop_up from "../layout/Pop_up";
+import CompraEfetuada from "../layout/CompraEfetuada";
 
 function Home(){
 
@@ -11,9 +12,11 @@ function Home(){
     const [st_anual, setSt_anual] = useState(style.slider_anual);
     const [checked, setChecked] = useState(false);
     const [scrollBlocked, setScrollBlocked] = useState(false);
+    const [compraEfetuada, setCompraEfetuada] = useState(false);
     const [total, setTotal] = useState(0);
     const [plano, setPlano] = useState();
     const [time, setTime] = useState('Mensal');
+    const [confirmou, setConfirmou] = useState(false);
 
     function alterna(){
         setChecked(!checked);
@@ -34,7 +37,7 @@ function Home(){
         }
     }
 
-    const toggleScrollBlocked = (estado, valor, plan) => {
+    const toggleScrollBlocked = (estado, comprou, valor, plan) => {
         switch(estado){
             case true:
                 const overlay = document.createElement('div');
@@ -45,11 +48,17 @@ function Home(){
                 document.body.style.overflow = "hidden";
                 break;
             case false:
-                document.body.style.pointerEvents = 'auto';
-                document.body.style.overflow = 'auto';
-                const overlayElement = document.getElementById('overlay');
-                document.body.removeChild(overlayElement);
-                break;
+                if(comprou === false){
+                    document.body.style.pointerEvents = 'auto';
+                    document.body.style.overflow = 'auto';
+                    const overlayElement = document.getElementById('overlay');
+                    document.body.removeChild(overlayElement);
+                    setCompraEfetuada(false);
+                    break;
+                }else{
+                    setScrollBlocked(false);
+                    setCompraEfetuada(true);
+                }
         };
         setScrollBlocked(estado);
         setTotal(valor);
@@ -73,6 +82,7 @@ function Home(){
             </div>
             <div>
                 {scrollBlocked && <Pop_up tipo={plano} tempo={time} total={total} scroll={toggleScrollBlocked} />}
+                {compraEfetuada && <CompraEfetuada scroll={toggleScrollBlocked}/>}
             </div>
         </div>
     );

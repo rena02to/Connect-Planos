@@ -48,7 +48,7 @@ function InfoPreco({ scroll, infos }){
 
 
     const Contratando = () => {
-        scroll(true, valor, plano);
+        scroll(true, false, valor, plano);
     }
 
     return(
