@@ -1,5 +1,8 @@
 <div align="center">
   <h1>Repositório e reconhecimento de criadores:</h1>
+  <hr>
+  <h2>Link para o site que consta o projeto<a href="https://tabela-precos.vercel.app/"> clicando aqui.</a></h2>
+  <hr>
   <h2>Sobre o repositório:</h2>
   <p>Projeto criado usando React (com as dependências: react-tout-dom, react-icons), tendo também como principal objetivo aprender a linguagem e melhorar os conhecimentos em HTML, CSS e JavaScript de forma a criar projetos de código limpo, com interfaces e flúidos, bonitas e agradáveis.</p>
   <p>Nesse projeto, temos a implementação de uma tabela de contratação de planos.<br>Nesse site o usuário vai inserir informações de um pseudo cartão de crédito, considerando a validação do número de cartão de crédito e considerando que a data de validade deve ser futura a data atual, contudo não há integração com banco de dados e nem com a empresa de cartões. Sendo assim, só há a validação do número do cartão de crédito, exigência de que a data de validade seja uma data futura, e que nenhum dos campos seja vazio ao tentar realizar a compra, podendo o usuário contratar plano mensal ou anual, e contratar por um período de meses/anos que ele quiser (máximo 12 meses/anos).</p>
