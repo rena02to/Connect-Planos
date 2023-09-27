@@ -58,19 +58,16 @@ function Pop_up({ tipo, tempo, total, scroll }){
 
     const Formata = () => {
         let cartaoCreditoInput = document.getElementById('cartao');
-        let valor = cartaoCreditoInput.value.replace(/\s/g, '');
-
+        let valor = cartaoCreditoInput.value.split("").filter(n => (Number(n) || n == 0)).join("");
+        
         let valorFormatado = '';
-        if(valor.charAt(valor.length - 1)){
-            for (let i = 0; i < valor.length; i++) {
-                if(!isNaN(valor.charAt(i))){
-                    valor = valor.slice(0, i) + valor.slice(i + 1);
-                    valorFormatado = valor;
-                }else if (i > 0 && i % 4 === 0) {
-                    valorFormatado += ' ';
-                }
-                valorFormatado += valor.charAt(i);
+        for (let i = 0; i < valor.length; i++) {
+            if(isNaN(valor[i])){
+                valor = valor.slice(0, i) + valor.slice(i + 1);
+            }else if (i > 0 && i % 4 === 0) {
+                valorFormatado += ' ';
             }
+            valorFormatado += valor.charAt(i);
         }
 
         cartaoCreditoInput.value = valorFormatado;
