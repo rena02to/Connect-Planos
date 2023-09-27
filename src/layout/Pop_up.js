@@ -58,7 +58,7 @@ function Pop_up({ tipo, tempo, total, scroll }){
 
     const Formata = () => {
         let cartaoCreditoInput = document.getElementById('cartao');
-        let valor = cartaoCreditoInput.value.split("").filter(n => isNaN(n) && n != " ").join("");
+        let valor = cartaoCreditoInput.value.split("").filter(n => (!isNaN(n) && n !== " ")).join("");
         let valorFormatado = '';
         for (let i = 0; i < valor.length; i++) {
             if (i > 0 && i % 4 === 0) {
