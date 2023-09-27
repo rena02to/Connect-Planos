@@ -62,9 +62,7 @@ function Pop_up({ tipo, tempo, total, scroll }){
         
         let valorFormatado = '';
         for (let i = 0; i < valor.length; i++) {
-            if(isNaN(valor[i])){
-                valor = valor.slice(0, i) + valor.slice(i + 1);
-            }else if (i > 0 && i % 4 === 0) {
+            if (i > 0 && i % 4 === 0) {
                 valorFormatado += ' ';
             }
             valorFormatado += valor.charAt(i);
