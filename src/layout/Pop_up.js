@@ -69,7 +69,7 @@ function Pop_up({ tipo, tempo, total, scroll }){
                 valorFormatado += valor.charAt(i);
             }
         }else{
-            valor = valor.slice(0, -1);
+            valor = valor.slice(0, index) + valor.slice(index + 1);
             valorFormatado = valor;
         }
 
