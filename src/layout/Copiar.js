@@ -13,7 +13,7 @@ function Copiar({ item }){
             setTimeout(() => setiscopied(style.notcopied), 2000);
             setTimeout(() => setTexto('Copiar e-mail'), 2000)
         }).catch((err) => {
-            setTexto("E-mail copiado!");
+            setTexto("Erro ao copiar e-mail!");
             setiscopied(style.errorcopied);
             setTimeout(() => setiscopied(style.notcopied), 2000)
             setTimeout(() => setTexto('Copiar e-mail'), 2000)

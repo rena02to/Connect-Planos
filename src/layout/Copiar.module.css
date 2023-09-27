@@ -20,7 +20,7 @@
     color: black;
 }
 
-.copied, .notcopied{
+.copied, .notcopied, .errorcopied{
     border-radius: 0px 0px 10px 10px;
     margin-top: 0.2em;
     width: 100%;
