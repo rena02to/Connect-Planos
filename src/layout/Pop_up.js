@@ -61,16 +61,16 @@ function Pop_up({ tipo, tempo, total, scroll }){
         let valor = cartaoCreditoInput.value.replace(/\s/g, '');
 
         let valorFormatado = '';
-        if(!isNaN(valor.charAt(valor.length - 1))){
+        if(valor.charAt(valor.length - 1)){
             for (let i = 0; i < valor.length; i++) {
-                if (i > 0 && i % 4 === 0) {
+                if(!isNaN(valor.charAt(i))){
+                    valor = valor.slice(0, i) + valor.slice(i + 1);
+                    valorFormatado = valor;
+                }else if (i > 0 && i % 4 === 0) {
                     valorFormatado += ' ';
                 }
                 valorFormatado += valor.charAt(i);
             }
-        }else{
-            valor = valor.slice(0, index) + valor.slice(index + 1);
-            valorFormatado = valor;
         }
 
         cartaoCreditoInput.value = valorFormatado;
