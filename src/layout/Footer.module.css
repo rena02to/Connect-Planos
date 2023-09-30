@@ -1,0 +1,30 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.footer p{
+    color: white;
+    margin-bottom: 0.5em;
+    font-size: 1em;
+    margin-top: 0.5em;
+}
+
+.footer svg{
+    color: white;
+    width: 2.5em;
+    height: 2.5em;
+    margin-left: 1em;
+    margin-bottom: 0em;
+}
+
+.footer div{
+    margin-top: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
