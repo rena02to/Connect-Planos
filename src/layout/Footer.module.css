@@ -22,6 +22,10 @@
     margin-bottom: 0em;
 }
 
+.footer svg:hover{
+    color: gray;
+}
+
 .footer div{
     margin-top: 1em;
     display: flex;
