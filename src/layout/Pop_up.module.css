@@ -14,6 +14,7 @@
     background-color: white;
     z-index: 999999;
     border-radius: 4%;
+    box-shadow: 13px 13px 10px 10px rgba(0, 150, 255, 0.5);
 }
 
 .main{
@@ -124,6 +125,7 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .total{
     color: green;
+    text-shadow: 0px 0px 20px rgba(0, 255, 0, 1);
 }
 
 .eTotal{
