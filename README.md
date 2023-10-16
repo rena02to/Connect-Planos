@@ -1,7 +1,7 @@
 <div align="center">
   <h1>Repositório e reconhecimento de criadores:</h1>
   <hr>
-  <h2>Veja o site<a href="https://tabela-precos.vercel.app/"> clicando aqui.</a></h2>
+  <p>Veja o site<a href="https://connect-planos.vercel.app/"> clicando aqui.</a></p>
   <hr>
   <h2>Sobre o repositório:</h2>
   <p>Projeto criado usando React (com as dependências: react-tout-dom, react-icons), tendo também como principal objetivo aprender a linguagem e melhorar os conhecimentos em HTML, CSS e JavaScript de forma a criar projetos de código limpo, com interfaces e flúidos, bonitas e agradáveis.</p>
