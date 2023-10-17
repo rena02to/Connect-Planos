@@ -1,4 +1,3 @@
-import CompraEfetuada from "./CompraEfetuada";
 import style from "./Pop_up.module.css";
 import { useState, useEffect } from "react";
 
