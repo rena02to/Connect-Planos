@@ -16,6 +16,9 @@
     flex-direction: row;
     align-items: center;
     margin-bottom: 3em;
+    padding-left: 40px;
+    padding-right: 40px;
+    text-align: center;
 }
 
 .titulo h1{

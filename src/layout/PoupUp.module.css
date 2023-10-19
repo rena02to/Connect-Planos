@@ -1,0 +1,190 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.poup_up{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 10%;
+    left: 30%;
+    width: 40%;
+    height: auto;
+    background-color: rgb(40, 40, 40);
+    color: white;
+    z-index: 999999;
+    border-radius: 20px;
+    box-shadow: 13px 13px 10px 10px rgba(0, 0, 0, 0.8);
+    padding-bottom: 30px;
+}
+
+.fechar{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 0px solid transparent;
+    background-color: red;
+    font-weight: 500;
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+}
+
+.fechar:hover{
+    background-color: rgb(255, 70, 70);
+}
+
+.legenda, .legenda2, .legenda3{
+    font-size: 15px;
+    text-align: center;
+}
+
+.legenda, .legenda3{
+    margin: 0 50px 0 50px;
+}
+
+.legenda2{
+    margin: 30px 50px 0 50px;
+}
+
+.titulo{
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+.infos, .total{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.infos
+
+.total{
+    color: rgb(0, 125, 0);
+}
+
+.poup_up form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.poup_up button{
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+
+.nCartao, .cpf, .name, .poup_up form button, .cvv, .venc{
+    text-align: center;
+    height: 40px;
+    outline: none;
+    border: 0px solid transparent;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.nCartao, .cpf, .name, .poup_up form button{
+    width: 300px;
+}
+
+.inline{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.cvv, .venc{
+    width: 140px;
+}
+
+.poup_up form button{
+    background-color: blue;
+    color: white;
+    margin-bottom: 40px;
+}
+
+.input{
+    display: flex;
+    flex-direction: column;
+}
+
+.error, .errorMenor{
+    color: rgb(210, 0, 0);
+    margin-bottom: 1em;
+    position: relative;
+    background: rgb(150, 150, 150);
+    border-radius: 5px;
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.7);
+    top: 15px;
+    margin-bottom: 1.5em;
+    padding: 5px;
+    text-align: center;
+}
+
+.error{
+    width: 300px;
+}
+
+.errorMenor{
+    width: 140px;
+}
+
+.error::before, .errorMenor:before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent rgb(150, 150, 150) transparent;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+@media (max-width: 1400px){
+    .poup_up{
+        width: 50%;
+        left: 25%;
+    }
+}
+
+@media (max-width: 1200px){
+    .poup_up{
+        width: 60%;
+        left: 20%;
+    }
+}
+
+@media (max-width: 1000px){
+    .poup_up{
+        width: 70%;
+        left: 15%;
+    }
+}
+
+@media (max-width: 800px){
+    .poup_up{
+        width: 80%;
+        left: 10%;
+    }
+}
+
+@media (max-width: 600px){
+    .poup_up{
+        width: 90%;
+        left: 5%;
+    }
+    .fechar{
+        top: 10px;
+        right: 10px;
+        height: 40px;
+        width: 40px;
+    }
+}

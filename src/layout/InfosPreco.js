@@ -37,6 +37,8 @@ function InfoPreco({ scroll, infos }){
                 setTipo(style.essencial);
                 setRepresent(<BsFillShieldFill className={style.escudo}/>);
                 break;
+            default:
+                break;
         }
     }, [plano]);
 

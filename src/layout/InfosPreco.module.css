@@ -141,32 +141,32 @@
 
 @media (max-width: 1600px) {
     .item{
-        width: 50%;
+        width: 40%;
         margin: 0px auto;
         margin-bottom: 5em;
+    }
+}
+
+@media (max-width: 1400px) {
+    .item{
+        width: 45%;
     }
 }
 
 @media (max-width: 1200px) {
     .item{
         width: 60%;
-        margin: 0px auto;
-        margin-bottom: 5em;
-    }
-}
-
-@media (max-width: 1000px) {
-    .item{
-        width: 70%;
-        margin: 0px auto;
-        margin-bottom: 5em;
     }
 }
 
 @media (max-width: 800px) {
     .item{
         width: 80%;
-        margin: 0px auto;
-        margin-bottom: 5em;
+    }
+}
+
+@media (max-width: 600px) {
+    .item{
+        width: 95%;
     }
 }

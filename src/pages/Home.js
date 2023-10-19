@@ -2,8 +2,8 @@ import { AiOutlineShoppingCart } from "react-icons/ai";
 import { useState } from "react";
 import style from "./Home.module.css";
 import InfoPreco from "../layout/InfosPreco";
-import Pop_up from "../layout/Pop_up";
 import CompraEfetuada from "../layout/CompraEfetuada";
+import PoupUp from "../layout/PoupUp";
 
 function Home(){
 
@@ -16,7 +16,6 @@ function Home(){
     const [total, setTotal] = useState(0);
     const [plano, setPlano] = useState();
     const [time, setTime] = useState('Mensal');
-    const [confirmou, setConfirmou] = useState(false);
 
     function alterna(){
         setChecked(!checked);
@@ -59,6 +58,9 @@ function Home(){
                     setScrollBlocked(false);
                     setCompraEfetuada(true);
                 }
+                break;
+            default:
+                break;
         };
         setScrollBlocked(estado);
         setTotal(valor);
@@ -81,7 +83,7 @@ function Home(){
                 <InfoPreco scroll={toggleScrollBlocked} infos={[mensal, 'Premium', 'Lorem Ipsum Dolor', 36, true, true, true, true, true]}/>
             </div>
             <div>
-                {scrollBlocked && <Pop_up tipo={plano} tempo={time} total={total} scroll={toggleScrollBlocked} />}
+                {scrollBlocked && <PoupUp tipo={plano} tempo={time} total={total} scroll={toggleScrollBlocked} />}
                 {compraEfetuada && <CompraEfetuada scroll={toggleScrollBlocked}/>}
             </div>
         </div>
